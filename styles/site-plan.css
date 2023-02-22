@@ -35,12 +35,17 @@ Fonts are separated by a | */
 .ingredients{
   display: inline-block;
   text-align: left;
-  line-height: 1.5em;
 }
 .preparation{
   display: inline-block;
   text-align: left;
-  line-height: 1.5em;
+  line-height: 1.2em;
+}
+li{
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
