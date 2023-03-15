@@ -4,108 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/elmercadito/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
     <title>Home Page</title>
 </head>
 <body>
+    <div id="content">
+        <!--Nav tab, logo-->
+        <header>
+            <a href="/elmercadito/index.html" id="logo_link"><img alt="el mercadito logo" class="logo" src="/elmercadito/images/logov2.png" width="209" height="100"></a>
+            <!--Nav tab-->
+            <nav>
+                <a href="/elmercadito/index.html">Home</a>
+                <a href="products.html">Our Products</a>
+                <a href="recipes.html">Recipes</a>
+                <a>Login</a>
+            </nav>
+        </header>
 
-    <!--Nav tab, logo-->
-    <header>
-        <a href="/elmercadito/index.html" id="logo_link"><img alt="el mercadito logo" class="logo" src="/elmercadito/images/logo.png" width="300"></a>
-        <!--Nav tab-->
-        <nav>
-            <a href="/elmercadito/index.html">Home</a>
-            <a href="products.html">Our Products</a>
-            <a href="recipes.html">Recipes</a>
-        </nav>
-        <div class="login">Login</div>
-    </header>
-
-    <!--Welcome visitors-->
-    <div id="hero">
-        <div id="hero-img-box">
-            <img id="hero=img" src="/elmercadito/images/peruvian-vegetables.jpg">
-        </div>
-        <section id="hero-msg">
-            <h1 class="home-title">Enjoy cooking<br> with products you are familiar with</h1>
-            <div class="button-box">
-                <a class="order-now" href="">Order Now</a>
+        <!--Welcome visitors-->
+        <div id="hero">
+            <div id="hero-img-box">
+                <img id="hero-img" src="/elmercadito/images/hero.png" width="100%" ">
             </div>
-        </section>
-    </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Enjoy cooking<br>with products you <br>are familiar with</h1>
+                <div class="button-box">
+                    <a class="order-now" href="">Order Now</a>
+                </div>
+            </section>
+        </div>
 
-    <!--Main home grid-->
-    <main class="home-grid">
+        <!--Main home grid-->
+ 
+        <section class="home-grid-background">
+            <section class="home-grid1">
+                <!--Why choose "El mercadito"-->
+                <section class="why-msg">
+                    <h2>Why choose “El Mercadito”?</h2>
+                </section>
 
-        <!--Why choose "El mercadito"-->
-        <section class="why-msg">
-            <h2>Why choose “El Mercadito”?</h2>
+                <img class="why-img" src="/elmercadito/images/quality.png" >
+                <img class="why-img" src="images/variety.png" >
+                <img class="why-img" src="/elmercadito/images/shipment.png" >
+            
+                <section class="why-quality">
+                    <h2>Quality</h2>
+                    <h3>We have the best high-quality peruvian based products. No more stale or rotten ingredients.</h3>
+                </section>
+
+                <section class="why-variety">
+                    <h2>Variety</h2>
+                    <h3>Explore our diverse catalog of ingredients and products!</h3>
+                </section>
+
+                <section class="why-shipment">
+                    <h2>Fast shipment</h2>
+                    <h3>No more long wait to get your food, we have the best team on the market to get your order within 48hrs from the order placement.</h3>
+                </section>
+            </section>
+
         </section>
 
-        <section class="why-quality">
-            <img class="why-img" src="/elmercadito/images/quality.png">
-            <h2>Quality</h2>
-            <h3>We have the best high-quality peruvian based products. No more stale or rotten ingredients.</h3>
-        </section>
-
-        <section class="why-variety">
-            <img class="why-img" src="images/variety.png">
-            <h2>Variety</h2>
-            <h3>Explore our diverse catalog of ingredients and products!</h3>
-        </section>
-
-        <section class="why-shipment">
-            <img class="why-img" src="/elmercadito/images/shipment.png">
-            <h2>Fast shipment</h2>
-            <h3>No more long wait to get your food, we have the best team on the market to get your order within 48hrs from the order placement.</h3>
-        </section>
-   
+            
         <!--Best selling products/most popular items-->
+
         <section class="best-selling-msg">
             <h2>Check out the most popular items before they ran out!</h2>
         </section>
 
-        <section class="best-selling-aji-amarillo">
-            <img class="best-selling-img" src="/elmercadito/images/ajiAmarillo.jpeg">
-            <h2>Ají Amarillo/Yellow Pepper</h2>
-        </section>
+        <section class="best-selling">
         
-        <section class="best-selling-inca-kola">
-            <img class="best-selling-img" src="/elmercadito/images/incakolaA.jpeg">
-            <h2>Inca Kola</h2>
-        </section>
-
-        <section class="best-selling-aji-casa">
-            <img class="best-selling-img" src="/elmercadito/images/aji-de-la-casa.jpeg">
-            <h2>Ají de la casa</h2>
-        </section>
-
-        <section class="best-selling-mayonesa">
-            <img class="best-selling-img" src="/elmercadito/images/mayonesa.jpeg">
-            <h2>Mayonesa/Mayonnaise</h2>
-        </section>
+            <section class="best-selling-aji-amarillo">
+                <h2>Ají Amarillo/Yellow Pepper</h2>
+                <img class="best-selling-img" src="/elmercadito/images/ajiAmarillo.jpeg">
+            </section>
             
+            <section class="best-selling-inca-kola">
+                <h2>Inca Kola</h2>
+                <img class="best-selling-img" src="/elmercadito/images/incakolaA.jpeg">
+            </section>
 
-    </main>
+            <section class="best-selling-aji-casa">
+                <h2>Ají de la casa</h2>
+                <img class="best-selling-img" src="/elmercadito/images/aji-de-la-casa.jpeg">             
+            </section>
 
-    <!--Footer-->
-    <footer>
-        <p>El Mercadito &copy; 2023 - Valeria Bisso</p>
-        <p><a href="/elmercadito/site-plan.html">Site Plan</a></p>
-        <p><a href="">Contact Us</a></p>
-        <div clas="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="/elmercadito/images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="insta icon">
-            </a>
-        </div>
+            <section class="best-selling-mayonesa">
+                <h2>Mayonesa/Mayonnaise</h2>
+                <img class="best-selling-img" src="/elmercadito/images/mayonesa.jpeg">
+            </section>
 
-
-    </footer>
+        </section>
     
+    
+        <!--Footer-->
+        <footer>
+            <p>El Mercadito &copy; 2023 - Valeria Bisso</p>
+            <p><a href="/elmercadito/site-plan.html">Site Plan</a></p>
+            <p><a href="">Contact Us</a></p>
+            <div clas="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="/elmercadito/images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="insta icon">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
