@@ -48,6 +48,9 @@ nav a:hover{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
 }
+#hero-img{
+    width: 100%;
+}
 #hero-img-box{
     grid-column: 1/4;
     grid-row: 1/2;
