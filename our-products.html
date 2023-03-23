@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/elmercadito/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+    <title>Our Products</title>
+</head>
+<body>
+    <div id="content">
+        <!--Nav tab, logo-->
+        <header>
+            <a href="/elmercadito/index.html" id="logo_link"><img alt="el mercadito logo" class="logo" src="/elmercadito/images/logov2.png" width="209" height="100"></a>
+            <!--Nav tab-->
+            <nav>
+                <a href="/elmercadito/index.html">Home</a>
+                <a href="products.html">Our Products</a>
+                <a href="recipes.html">Recipes</a>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+            </nav>
+        </header>
+
+        <!--Login form-->
+
+        <div id="id01" class="modal">
+        
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="/elmercadito/images/avatar.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+            
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
+
+        <!--Title-->
+        <h1 class="sub-title1">Our Products</h1>
+        
+
+
+
+
+
+
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        <!--Footer-->
+        <footer>
+            <p>El Mercadito &copy; 2023 - Valeria Bisso</p>
+            <p><a href="/elmercadito/site-plan.html">Site Plan</a></p>
+            <p><a href="">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img  src="/elmercadito/images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img  src="images/instagram.png" alt="insta icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

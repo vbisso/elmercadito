@@ -303,3 +303,142 @@ input[type=text], input[type=password] {
     }
   }
 
+  /*SUB PAGE 1: OUR PRODUCTS*/
+
+.our-products-title{
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+  background-color: #FC3005;
+  color: white;
+}
+
+.products-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  grid-gap: 15px;
+  border: 1px solid #D9CFCD;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.products-img{
+  width: 80%;
+  border-bottom: #D9CFCD solid 1px;
+}
+
+.product-info{
+  text-align: left;
+  padding-left: 20px;
+}
+
+.add-box{
+  text-align: center;
+  margin-left: 210px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #FC3005;
+  color: white;
+  font-weight: bold;
+  border-radius: 5%;
+  padding: 1px;
+}
+.add-box:hover{
+  background-color: #cb2706;
+}
+
+.fresh-produce-title1{
+  grid-column: 1/5;
+  grid-row: 1/2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: underline;
+
+}
+.fresh1{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  border: 1px solid #D9CFCD; 
+}
+
+.fresh2{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  border: 1px solid #D9CFCD; 
+}
+.fresh3{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  border: 1px solid #D9CFCD; 
+}
+.fresh4{
+  grid-column: 4/5;
+  grid-row: 3/4;
+  border: 1px solid #D9CFCD; 
+}
+
+.pantry-title{
+  grid-column: 1/5;
+  grid-row: 4/5;
+  text-align: center;
+  padding: 20px;
+  text-decoration: underline;
+}
+
+.pantry1{
+  grid-column: 1/2;
+  grid-row: 5/6;
+  border: 1px solid #D9CFCD; 
+}
+.pantry2{
+  grid-column: 2/3;
+  grid-row: 5/6;
+  border: 1px solid #D9CFCD; 
+}
+.pantry3{
+  grid-column: 3/4;
+  grid-row: 5/6;  
+  border: 1px solid #D9CFCD; 
+}
+.pantry4{
+  grid-column: 4/5;
+  grid-row: 5/6;
+  border: 1px solid #D9CFCD; 
+}
+
+
+.beverages-title{
+  grid-column: 1/5;
+  grid-row: 6/7;
+  text-align: center;
+  padding: 20px;
+  text-decoration: underline;
+}
+.bev1{
+  grid-column: 1/2;
+  grid-row: 7/8;
+  border: 1px solid #D9CFCD; 
+}
+.bev2{
+  grid-column: 2/3;
+  grid-row: 7/8;
+  border: 1px solid #D9CFCD; 
+}
+
+.bev3{
+  grid-column: 3/4;
+  grid-row: 7/8;
+  border: 1px solid #D9CFCD; 
+}
+
+.bev4{
+  grid-column: 4/5;
+  grid-row: 7/8;
+  border: 1px solid #D9CFCD; 
+}
+

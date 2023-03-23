@@ -4,136 +4,246 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/elmercadito/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <title>Our Products</title>
 </head>
 <body>
+    <div ID="content">
+            <!--Nav tab, logo-->
+            <header>
+                <a href="/elmercadito/index.html" id="logo_link"><img alt="el mercadito logo" class="logo" src="/elmercadito/images/logov2.png" width="209" height="100"></a>
+                <!--Nav tab-->
+                <nav>
+                    <a href="/elmercadito/index.html">Home</a>
+                    <a href="products.html">Our Products</a>
+                    <a href="recipes.html">Recipes</a>
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </nav>
+            </header>
 
-    <!--Nav tab, logo-->
-    <header>
-        <a href="/elmercadito/index.html" id="logo_link"><img alt="el mercadito logo" class="logo" src="/elmercadito/images/logo.png" width="300"></a>
-        <!--Nav tab-->
-        <nav>
-            <a href="/elmercadito/index.html">Home</a>
-            <a href="products.html">Our Products</a>
-            <a href="recipes.html">Recipes</a>
-        </nav>
-        <div class="login">Login</div>
-    </header>
+            <!--Login form-->
 
-    <!--Main home grid-->
-    <h1>Our Products</h1>
-
-    <main class="products-grid">
-
-        <!--Fresh Produce-->
-
-        <div class="fresh-produce-subtitle">
-            <h2>Fresh Produce</h2>
-        </div>
-
-        <div class="fresh-produce1">
-            <img class="fresh-produce-img" src="/elmercadito/images/ajiAmarillo.jpeg">
-            <p>Ají Amarillo/Yellow Pepper</p>
-            <p>$0.78 each</p>
-        </div>
-        <div class="add-box1">
-            <p>Add to cart</p>
-        </div>
-
-        <div class="fresh-produce2">
-            <img class="fresh-produce-img" src="/elmercadito/images/papa-amarilla.jpeg">
-            <p>Papa Amarilla/Yellow Potatoes</p>
-            <p>$0.88 each</p>
-        </div>
-        <div class="add-box2">
-            <p>Add to cart</p>
-        </div>
+            <div id="id01" class="modal">
         
-        <div class="fresh-produce3">
-            <img class="fresh-produce-img" src="/elmercadito/images/rocoto.png">
-            <p>Rocoto</p>
-            <p>$0.86 each</p>
-        </div>
-        <div class="add-box3">
-            <p>Add to cart</p>
-        </div>
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="/elmercadito/images/avatar.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" id="uname" required>
+                
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" id="psw" required>
+                        
+                        <button type="submit">Login</button>
+                        <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+                </form>
+            </div>
 
-        <!--Pantry-->
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
 
-        <div class="Pantry1">
-            <img class="pantry-img" src="/elmercadito/images/mayonesa.jpeg">
-            <p>Mayonesa/Mayonnaise | 16.75 fl oz</p>
-            <p>$6.30</p>
-        </div>
-        <div class="add-box4">
-            <p>Add to cart</p>
-        </div>
+            <!--Main home grid-->
+            <h1 class="our-products-title">Our Products</h1>
 
-        <div class="Pantry2">
-            <img class="pantry-img" src="/elmercadito/images/aji-de-la-casa.jpeg">
-            <p>Ají de la casa | 15.87 fl oz</p>
-            <p>$5.70</p>
-        </div>
-        <div class="add-box5">
-            <p>Add to cart</p>
-        </div>
 
-        <div class="Pantry3">
-            <img class="pantry-img" src="/elmercadito/images/atun.jpeg">
-            <p>Atún/Tuna | 5.99 fl oz</p>
-            <p>$4.80</p>
-        </div>
-        <div class="add-box6">
-            <p>Add to cart</p>
-        </div>
+            <div class="products-grid">
 
-        <!--Beverages-->
-        <div class="Beverages1">
-            <img class="beverages-img" src="/elmercadito/images/incakolaA.jpeg">
-            <p>Inca Kola | 67.6 fl oz</p>
-            <p>$5.80</p>
-        </div>
-        <div class="add-box7">
-            <p>Add to cart</p>
-        </div>
+                <h2 class="fresh-produce-title1">Fresh Produce</h2>
+                <!--Fresh Produce-->
 
-        <div class="Beverages2">
-            <img class="beverages-img" src="/elmercadito/images/chicha.png">
-            <p>Chicha Morada | 33.81 fl oz</p>
-            <p>$3.70</p>
-        </div>
-        <div class="add-box8">
-            <p>Add to cart</p>
-        </div>
+                <div class="fresh1">
+                    <img alt="aji amarillo" class="products-img" src="/elmercadito/images/ajiAmarillo.jpeg">
+                    <div class="product-info">
+                        <p>Ají Amarillo/Yellow Pepper</p>
+                        <p>$0.78 each</p>
+                    </div>
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+                    
+                <div class="fresh2">
+                    <img alt="papa amarilla"  class="products-img" src="/elmercadito/images/papa-amarilla.jpeg">
+                    <div class="product-info">
+                        <p>Papa Amarilla/Yellow Potatoes</p>
+                        <p>$0.88 each</p>
+                    </div>
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+                </div>
 
-        <div class="Beverages3">
-            <img class="beverages-img" src="/elmercadito/images/maracuya.jpeg">
-            <p>Maracuya | 33.81 fl oz</p>
-            <p>$3.70</p>
-        </div>
-        <div class="add-box9">
-            <p>Add to cart</p>
-        </div>
+                <div class="fresh3">
+                    <img alt="rocoto" class="products-img" src="/elmercadito/images/rocoto.png">
+                    <div class="product-info">
+                        <p>Rocoto</p>
+                        <p>$0.86 each</p>
+                    </div> 
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+                </div>    
 
-    </main>
+                <div class="fresh4">
+                    <img alt="choclo peruano" class="products-img" src="/elmercadito/images/choclo.png">
+                    <div class="product-info">
+                        <p>Cholo</p>
+                        <p>$0.99 each</p>
+                    </div>
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+                    
 
-    <!--Footer-->
-    <footer>
-        <p>El Mercadito &copy; 2023 - Valeria Bisso</p>
-        <p><a href="/elmercadito/site-plan.html">Site Plan</a></p>
-        <p><a href="">Contact Us</a></p>
-        <div clas="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="/elmercadito/images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="insta icon">
-            </a>
+                <!--Pantry-->
+
+                <h2 class="pantry-title">Pantry</h2>
+
+                <div class="pantry1">
+                    <img alt="mayonesa" class="products-img" src="/elmercadito/images/mayonesa.jpg">
+                    <div class="product-info">
+                        <p>Mayonesa/Mayonnaise | 16.75 fl oz</p>
+                        <p>$6.30</p>
+                    </div>
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+
+                <div class="pantry2">
+                    <img alt="aji de casa" class="products-img" src="/elmercadito/images/aji-de-la-casa.jpeg">
+                    <div class="product-info">
+                        <p>Ají de la casa | 15.87 fl oz</p>
+                        <p>$5.70</p>
+                    </div>
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+
+                <div class="pantry3">
+                    <img alt="atun" class="products-img" src="/elmercadito/images/atun.jpeg" >
+                    <div class="product-info">
+                        <p>Atún/Tuna | 5.99 fl oz</p>
+                        <p>$4.80</p>
+                    </div>
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+
+                </div>
+                
+                <div class="pantry4">
+                    <img class="products-img" src="/elmercadito/images/tari.png" alt="tari">
+                    <div class="product-info">
+                        <p>Tari | 14.11 fl oz</p>
+                        <p>$6.80</p>
+                    </div>
+                    
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+                    
+
+                <!--Beverages-->
+
+                <h2 class="beverages-title">Beverages</h2>
+                <div class="bev1">
+                    <img alt="inca kola" class="products-img" src="/elmercadito/images/incakolaA.jpeg">
+                    <div class="product-info">
+                        <p>Inca Kola | 67.6 fl oz</p>
+                        <p>$5.80</p>
+                    </div>
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+                    
+                <div class="bev2">
+                    <img alt="chicha morada" class="products-img" src="/elmercadito/images/chicha.png">
+                    <div class="product-info">
+                        <p>Chicha Morada | 33.81 fl oz</p>
+                        <p>$3.70</p>
+                    </div>
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+
+                </div>
+            
+                <div class="bev3">
+                    <img alt="maracuya" class="products-img" src="/elmercadito/images/maracuya.jpeg">
+                    <div class="product-info">
+                        <p>Maracuya | 33.81 fl oz</p>
+                        <p>$3.70</p>
+
+                    </div>
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+
+                </div>
+               
+                <div class="bev4">
+                    <img alt="chicha de jora" class="products-img" src="/elmercadito/images/chichajora.jpeg">
+                    <div class="product-info">
+                        <p>Chicha de Jora | 16 fl oz</p>
+                        <p>$5.50</p>
+                    </div>
+                    <div class="add-box">
+                        <p>Add to cart</p>
+                    </div>
+
+                </div>
+                    
+
+
+            </div>
+
+            <!--Footer-->
+            <footer>
+                <p>El Mercadito &copy; 2023 - Valeria Bisso</p>
+                <p><a href="/elmercadito/site-plan.html">Site Plan</a></p>
+                <p><a href="">Contact Us</a></p>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="/elmercadito/images/facebook.png" alt="fb icon">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/twitter.png" alt="twitter icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="images/instagram.png" alt="insta icon">
+                    </a>
+                </div>
+            </footer>
         </div>
-    </footer>
-    
-</body>
-</html>
+    </body>
+    </html>
