@@ -4,96 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/elmercadito/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <title>Recipes</title>
 </head>
 <body>
+    <div id="content">
 
-    <!--Nav tab, logo-->
-    <header>
-        <a href="/elmercadito/index.html" id="logo_link"><img alt="el mercadito logo" class="logo" src="/elmercadito/images/logo.png" width="300"></a>
-        <!--Nav tab-->
-        <nav>
-            <a href="/elmercadito/index.html">Home</a>
-            <a href="products.html">Our Products</a>
-            <a href="recipes.html">Recipes</a>
-        </nav>
-        <div class="login">Login</div>
-    </header>
+        <!--Nav tab, logo-->
+        <header>
+            <a href="/elmercadito/index.html" id="logo_link"><img alt="el mercadito logo" class="logo" src="/elmercadito/images/logov2.png" width="209" height="100"></a>
+            <!--Nav tab-->
+            <nav>
+                <a href="/elmercadito/index.html">Home</a>
+                <a href="products.html">Our Products</a>
+                <a href="recipes.html">Recipes</a>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                <span class="material-symbols-outlined">shopping_cart</span>
+            </nav>
+        </header>
+
+        <!--Login form-->
+
+        <div id="id01" class="modal">
+      
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="/elmercadito/images/avatar.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" id="uname" required>
+            
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="psw" required>
+                    
+                    <button type="submit">Login</button>
+                    <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+        </div>
+          
+        <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+        </script>
+
+            
+        <!--Main home grid-->
+
+        <section class="recipes-grid">
+            <h1>Recipes</h1>
+            <div class="recipes-subtitle">
+                <h2>Lomo Saltado</h2>
+                <img class="recipes-img" src="/elmercadito/images/ingredients.jpg" alt="lomo saltado ingredients">
+            </div>
+
+            <div class="ingredients-box">
+                <h2>Ingredients:</h2>
+                <ul class="ingredients">
+                    <li>Papa Amarilla (Yellow potatoes) – 5 units</li>
+                    <li>Salt and Pepper </li>
+                    <li>Vegetable Oil – 6 tablespoons</li>
+                    <li>Fine minced Garlic – 1 tablespoon</li>
+                    <li>Rice – 2 cups</li>
+                    <li>Choclo (White corn) – 1 unit</li>
+                    <li>Butter – 1 tablespoon</li>
+                    <li>Thin Loin – 250 gr</li>
+                    <li>Red onion – 1 unit</li>
+                    <li>Aji Amarillo (Yellow Pepper) – 1 unit</li>
+                    <li>Soy Sauce</li>
+                    <li>Oyster Sauce</li>
+                    <li>White vinegar – 2 tablespoons</li>
+                    <li>Tomatoes – 1 unit</li>
+                    <li>Green Onions </li>
+                    <li>Cilantro</li>
+                </ul> 
+            </div>
+
+            <div class="preparation-box">
+                <h3>Preparation:</h3>
+                <ol class="preparation">
+                    <li>In a pot, add 5 quartered yellow potatoes (“papas amarillas”), add 1/2 cup of water, and 1/2 teaspoon of salt. Cover and cook for 6 minutes.</li>
+                    <li>In a pot add 3 tablespoons of oil, and 1 tablespoon of finely chopped garlic (fry for 3 minutes).</li>
+                    <li>Add 2 cups of washed rice to the pot, mix, add 2 quarters of a cup, a shelled corn (“choclo”), salt to taste, cover and cook for 20 minutes. If you like you can add a tablespoon of butter. Reserve and keep warm.</li>
+                    <li>On a chopping board, cut 250 grams of thin loin (“lomo”), cut into strips, and then into cubes, add salt and pepper to taste.</li>
+                    <li>In a preheated pan for 3 minutes over high heat add 3 tablespoons of oil and add cubes of fine loin (in small portions). Seal over high heat for 1 minute. Push and pull the pan until it starts to flame. Reserve sautéed loin (“lomo saltado”).</li>
+                    <li>In a pan add 1 red onion in wedges, and 1 yellow pepper (“aji amarillo”) cut into strips, seal over high heat for 1 minute, and sauté. Reserve sautéed vegetables together with one tomato cut into wedges.</li>
+                    <li>In a container add 4 tablespoons of clear soy sauce, 3 tablespoons of oyster sauce, 2 tablespoons of white or red vinegar, 1/4 cup of water. Integrate and reserve.</li>
+                    <li>Add the “lomo saltado” sauce to the pan, reduce to the point of sauce, and then add the “lomo saltado” and integrate.</li>
+                    <li>Add vegetables, and green onion in sticks to taste, sauté, and add finely chopped cilantro to taste. Sauté and serve hot.</li>
+                    <li>Fry precooked potatoes in abundant oil, until golden brown. Serve together with grained rice and “lomo saltado”.</li>
+                </ol>
+            </div>
+        </section>
+
+        <div class="recipes-grid-img">
+            <img alt= "lomo saltado 1" class="recipes-img1" src="/elmercadito/images/lomo-saltado.jpeg"> 
+            <img alt= "lomo saltado 2" class="recipes-img2" src="/elmercadito/images/lomo-saltado2.jpeg">
+
+        </div>
+            
     
-    <!--Main home grid-->
-    <h1>Recipes</h1>
+    
+    
+        <!--Footer-->
+        <footer>
+            <p>El Mercadito &copy; 2023 - Valeria Bisso</p>
+            <p><a href="/elmercadito/site-plan.html">Site Plan</a></p>
+            <p><a href="">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="/elmercadito/images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="insta icon">
+                </a>
+            </div>
+        </footer>
 
-    <main class="recipes-grid">
+    </div>
 
-        <div class="recipes-subtitle">
-            <h2>Lomo Saltado</h2>
-            <img class="recipes-img" src="/elmercadito/images/ingredients.jpeg">
-        </div>
-
-        <div class="ingredients-box">
-            <h3>Ingredients:</h3>
-            <ul class="ingredients">
-                <li>Papa Amarilla (Yellow potatoes) – 5 units</li>
-                <li>Salt and Pepper </li>
-                <li>Vegetable Oil – 6 tablespoons</li>
-                <li>Fine minced Garlic – 1 tablespoon</li>
-                <li>Rice – 2 cups</li>
-                <li>Choclo (White corn) – 1 unit</li>
-                <li>Butter – 1 tablespoon</li>
-                <li>Thin Loin – 250 gr</li>
-                <li>Red onion – 1 unit</li>
-                <li>Aji Amarillo (Yellow Pepper) – 1 unit</li>
-                <li>Soy Sauce</li>
-                <li>Oyster Sauce</li>
-                <li>White vinegar – 2 tablespoons</li>
-                <li>Tomatoes – 1 unit</li>
-                <li>Green Onions </li>
-                <li>Cilantro</li>
-            </ul> 
-        </div>
-
-        <div class="preparation-box">
-            <h3>Preparation:</h3>
-            <ol class="preparation">
-                <li>In a pot, add 5 quartered yellow potatoes (“papas amarillas”), add 1/2 cup of water, and 1/2 teaspoon of salt. Cover and cook for 6 minutes.</li>
-                <li>In a pot add 3 tablespoons of oil, and 1 tablespoon of finely chopped garlic (fry for 3 minutes).</li>
-                <li>Add 2 cups of washed rice to the pot, mix, add 2 quarters of a cup, a shelled corn (“choclo”), salt to taste, cover and cook for 20 minutes. If you like you can add a tablespoon of butter. Reserve and keep warm.</li>
-                <li>On a chopping board, cut 250 grams of thin loin (“lomo”), cut into strips, and then into cubes, add salt and pepper to taste.</li>
-                <li>In a preheated pan for 3 minutes over high heat add 3 tablespoons of oil and add cubes of fine loin (in small portions). Seal over high heat for 1 minute. Push and pull the pan until it starts to flame. Reserve sautéed loin (“lomo saltado”).</li>
-                <li>In a pan add 1 red onion in wedges, and 1 yellow pepper (“aji amarillo”) cut into strips, seal over high heat for 1 minute, and sauté. Reserve sautéed vegetables together with one tomato cut into wedges.</li>
-                <li>In a container add 4 tablespoons of clear soy sauce, 3 tablespoons of oyster sauce, 2 tablespoons of white or red vinegar, 1/4 cup of water. Integrate and reserve.</li>
-                <li>Add the “lomo saltado” sauce to the pan, reduce to the point of sauce, and then add the “lomo saltado” and integrate.</li>
-                <li>Add vegetables, and green onion in sticks to taste, sauté, and add finely chopped cilantro to taste. Sauté and serve hot.</li>
-                <li>Fry precooked potatoes in abundant oil, until golden brown. Serve together with grained rice and “lomo saltado”.</li>
-            </ol>
-        </div>
-
-        <div class="lomo-saltado-box1">
-            <img class="recipes-img" src="/elmercadito/images/lomo-saltado.jpeg"> 
-        </div>
-        <div class="lomo-saltado-box2">
-            <img class="recipes-img" src="/elmercadito/images/lomo-saltado2.jpeg"> 
-        </div>
-
-    </main>
-
-    <!--Footer-->
-    <footer>
-        <p>El Mercadito &copy; 2023 - Valeria Bisso</p>
-        <p><a href="/elmercadito/site-plan.html">Site Plan</a></p>
-        <p><a href="">Contact Us</a></p>
-        <div clas="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="/elmercadito/images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="insta icon">
-            </a>
-        </div>
-    </footer>
+    
     
 </body>
 </html>

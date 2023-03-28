@@ -309,8 +309,8 @@ input[type=text], input[type=password] {
   text-align: center;
   padding: 20px;
   margin-top: 0;
-  background-color: #FC3005;
-  color: white;
+  background-color: #D9CFCD;
+  color: #25241F;
 }
 
 .products-grid{
@@ -319,8 +319,7 @@ input[type=text], input[type=password] {
   align-items: center;
   text-align: center;
   grid-gap: 15px;
-  border: 1px solid #D9CFCD;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 50px;
   padding-left: 30px;
   padding-right: 30px;
@@ -440,5 +439,61 @@ input[type=text], input[type=password] {
   grid-column: 4/5;
   grid-row: 7/8;
   border: 1px solid #D9CFCD; 
+}
+
+
+  /*SUB PAGE 2: RECIPES*/
+
+.recipes-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 50px;
+}
+.recipes-grid h1{
+  grid-column: 1/3;
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  background-color: #D9CFCD ;
+  color: #25241F;
+  font-size: 32px;
+}
+
+.recipes-subtitle{
+  padding-left: 30px;
+  text-align: center; 
+  font-size: 1.1em;
+}
+
+.ingredients-box{
+  margin-left: 40px;
+  margin-top: 45px;
+  font-size: 18px;
+}
+
+.preparation-box{
+  grid-column: 1/3;
+  margin-left: 40px;
+  margin-right: 45px;
+  margin-top: 50px;
+  line-height: 1.7em;
+  font-size: 18px;
+}
+
+.recipes-grid-img{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  margin-top: 30px;
+  
+}
+.recipes-img1, .recipes-img2{
+  width: 60%;
+}
+
+
+.recipes-img1{
+  justify-self: end;
 }
 
